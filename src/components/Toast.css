@@ -1,0 +1,28 @@
+/* src/components/Toast.css */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    display: flex;
+    gap: 20px;
+    min-width: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toast button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}

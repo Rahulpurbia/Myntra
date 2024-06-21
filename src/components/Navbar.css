@@ -5,6 +5,11 @@
     padding: 10px 20px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar__logo img {
@@ -51,6 +56,11 @@
     top: 0;
     right: 0;
     transform: translate(60%, -40%);
+    width: 10px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar__hamburger {

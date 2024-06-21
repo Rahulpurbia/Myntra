@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/actions/cartActions";
 import axios from "axios";
 import "./ProductDetails.css";
+import { addToast } from "../redux/actions/toastActions";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -22,6 +23,7 @@ const ProductDetails = () => {
 
   const handleAddToCart = () => {
     dispatch(addToCart(product));
+    dispatch(addToast("Added Product To Cart!"));
   };
 
   if (!product) return <p>Loading...</p>;
